@@ -6,7 +6,7 @@ public class InfoEntry
 
     public void DisplayEntry()
     {
-        Console.WriteLine($"{Date} || {Prompt}");
+        Console.WriteLine($"{Date} | {Prompt}");
         Console.WriteLine($"{Response}");
         Console.WriteLine();        
     }
