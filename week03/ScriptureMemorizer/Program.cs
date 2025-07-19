@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // List of available scriptures
+        // List of available scriptures to display
         List<(Reference, string)> scriptures = new List<(Reference, string)>
         {
             (new Reference("Proverbs", 3, 5, 6), "Trust in the Lord with all your heart and lean not on your own understanding."),
@@ -15,7 +15,7 @@ class Program
             (new Reference("2 Timothy", 1, 7), "For God has not given us a spirit of fear, but of power and of love and of a sound mind.")
         };
 
-        // Pick one at random
+        // Pick one at random 
         Random rand = new Random();
         int index = rand.Next(scriptures.Count);
         Reference reference = scriptures[index].Item1;
