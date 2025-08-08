@@ -14,11 +14,11 @@ public class ChecklistGoal : Goal
 
     public ChecklistGoal(string name, string description, int points, int amountCompleted, int target, int bonus)
     : base(name, description, points)
-    {
-        _amountCompleted = amountCompleted;
-        _target = target;
-        _bonus = bonus;
-    }
+{
+    _amountCompleted = amountCompleted;
+    _target = target;
+    _bonus = bonus;
+}
 
     public override void RecordEvent()
     {
@@ -32,5 +32,5 @@ public class ChecklistGoal : Goal
         $"[{(_amountCompleted >= _target ? "X" : " ")}] {_shortName} ({_description}) — Completed {_amountCompleted}/{_target}";
 
     public override string GetStringRepresentation() =>
-        $"ChecklistGoal:{_shortName},{_description},{_points},{_amountCompleted},{_target},{_bonus}";
+        $"ChecklistGoal,{_shortName},{_description},{_points},{_amountCompleted},{_target},{_bonus}";
 }

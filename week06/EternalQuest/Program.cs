@@ -1,3 +1,6 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
 
 /// Eternal Quest - Goal Tracking Program
 /// -------------------------------------
@@ -12,3 +15,12 @@
 /// - Bonus points in checklist goals
 /// - Easily extendable with new goal types
 /// - Interactive, menu-based interface
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        GoalManager goalManager = new GoalManager();
+        goalManager.Start();
+    }
+}

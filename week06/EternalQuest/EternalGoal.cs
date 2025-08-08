@@ -11,5 +11,5 @@ public class EternalGoal : Goal
         $"[∞] {_shortName} ({_description})";
 
     public override string GetStringRepresentation() =>
-        $"EternalGoal:{_shortName},{_description},{_points}";
+        $"EternalGoal,{_shortName},{_description},{_points}";
 }
